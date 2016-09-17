@@ -1,0 +1,26 @@
+/*
+ * CLOUDNS.NET CUSTOM STYLESHEET
+ */
+
+
+.navbar {
+  background-color:#444;
+}
+ .navbar-brand {
+    height:60px;
+    padding-top:5px;
+    padding-bottom:5px;
+ }
+  .navbar-brand img {
+     max-height:100%;
+  }
+
+  
+#sidebar {
+	position:fixed;
+	left:0;
+	top:60px;
+	height:100%;
+	width:240px;
+	background-color:#f9f9f9;
+}

@@ -1,0 +1,306 @@
+/*
+ * CLOUDNS.NET CUSTOM STYLESHEET
+ */
+
+* {
+	box-shadow:none!important;
+}
+
+body {
+	background-color:rgba(0,0,0,0.01);
+	font-family: Roboto, sans-serif;
+}
+
+a {
+	color:#3bafda;
+}
+
+/* ========== PAGE HEADER ========== */
+#page-header {
+  padding:10px 0;
+  border-bottom:1px solid #eee;
+  margin-bottom:30px;
+}
+ .navbar-brand {
+    height:60px;
+    padding-top:5px;
+    padding-bottom:5px;
+ }
+  .navbar-brand img {
+     max-height:100%;
+  }
+  
+.navbar-user {
+	margin-top:5px;
+	margin-bottom:5px;
+	display:table;
+}
+	.navbar-user .user-info,
+	.navbar-user .user-image {
+		display:table-cell;
+		vertical-align:middle;
+		text-align:right;
+	}
+	
+	.navbar-user .email {
+		font-size:85%;
+	}
+	.navbar-user .avatar {
+		border-radius:100%;
+		margin-left:5px;
+		width:50px;
+		height:50px;
+		/* border:1px solid #666; */
+	}
+
+/* ========== NAVIGATION ========== */
+.nav-header {
+	font-size:85%;
+	color:#8a8a8a;
+	text-transform:uppercase;
+	font-weight:600;
+	padding:15px 15px 0;
+}
+
+#sidebar .nav li {
+	margin-bottom:1px;
+}
+
+/* ========== PAGE CONTENT ========== */
+#content {
+	opacity:0;
+}
+.page-loaded #content {
+	opacity:1;
+	transition:opacity ease .4s;
+}
+
+	.page-header {
+		font-weight:300;
+		margin-top:20px;
+		margin-bottom:30px;
+	}
+
+	#page-footer {
+		padding:50px 0;
+		border-top:1px solid #eee;
+		margin-top:30px;
+	}
+
+/* ========== COMPONENTS ========== */
+
+/* ===== SECTION ===== */
+.section {
+	margin-bottom:30px;
+}
+	.section .section-header {
+		border-top: 1px solid #eee;
+		text-transform: uppercase;
+		font-size: 16px;
+		color: #8a8a8a;
+		text-align: center;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin-bottom: 20px;
+		text-align: left;	
+	}
+
+/* ===== STATBOX ===== */
+.statbox-row {
+	margin-left:0;
+	margin-right:0;
+}
+	.statbox-row .statbox {
+		border-right:1px solid rgba(0,0,0,0.1);
+		background-color:#f6f6f6;
+		padding:15px;
+	}
+	.statbox-row .statbox:last-child {
+		border-right:0;
+	}
+		.statbox-count {
+			display:block;
+			font-size:28px;
+			margin-top:15px;
+		}
+		.statbox-name {
+			display:block;
+			font-size:14px;
+			color:#888;
+			text-transform:uppercase;
+		}
+		.statbox-divider {
+			display:block;
+			height:2px;
+		}
+		
+		.statbox .fa {
+			font-size: 42px;
+			position: absolute;
+			right: 15px;
+			opacity: .4;
+			top: 15px;			
+		}
+
+/* ===== DOMAIN ACTIONS ===== */		
+#quick-domains {
+	
+}
+	#quick-domains .btn {
+		position:relative;
+		overflow:hidden;
+		border-radius:0;
+		border:0;
+		text-align:center;
+	}
+		#quick-domains .btn .fa {
+			font-size: 32px;
+			margin: 30px auto;
+			border: 2px solid;
+			border-radius: 100%;
+			width: 51px;
+			height: 51px;
+			line-height: 48px;
+			text-align: center;
+		}
+		#quick-domains .btn .name {
+			display: block;
+			text-transform:uppercase;
+			font-size:14px;
+			font-weight:bold;
+		}
+		#quick-domains .btn .btn-overlay {
+			display: block;
+			height: 200%;
+			position: absolute;
+			background: rgba(0,0,0,0.03);
+			width: 100%;
+			transform: rotate(45deg);
+			left: -45%;
+			transition: all ease .2s;
+			bottom: 0;
+		}
+		#quick-domains .btn:hover .btn-overlay {
+			left:-150%;
+			transition: all ease .2s;
+		}
+		
+/* ===== DOMAINS TABLE ===== */
+#domains-table .domain-name {
+	display:block;
+}
+
+/* ===== PRICING TABLE ===== */
+.price-panel-row {
+	padding-top:30px;
+}
+
+.price-panel{
+	text-align:center;
+	border:0;
+	outline:1px solid #eee;
+	position:relative;
+}
+	.price-panel .panel-heading{
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border-radius: 0;	
+		position:relative;
+	}
+		.price-panel .panel-title{
+			font-size:22px;		
+		}
+			.price-panel .panel-title small{
+				display:block;
+				margin-top:5px;					
+			}
+			
+	.price-panel .list-group-item {
+		
+	}				
+		.price-panel .list-group-item label{
+			display: block;
+			font-weight: normal;
+			text-transform: uppercase;
+			font-size: 12px;
+			color: #818181;
+			font-weight: 600;
+			text-align:left;
+		}			
+		.price-panel .list-group-item .item-amount {
+			font-weight:600;
+			display:block;
+			text-align:right;
+		}
+
+/* FEATURED PANELS */
+.price-panel-featured {
+	z-index:1;
+    margin-top: -40px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2)!important;
+    outline: 0;	
+}
+	.price-panel-featured .panel-heading {
+		padding-top:50px;
+		padding-bottom:50px;
+	}
+		.price-panel-featured .price-panel-badge {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			background: rgba(0,0,0,0.2);
+			color: #FFF;
+			padding: 5px;
+			display: block;			
+		}
+
+/* ===== STATUS-BADGE ===== */
+.status-badge {
+	border:3px solid #FFF;
+	width:15px;
+	height:15px;
+	border-radius:100%;
+	float:right;
+	/* animation:ping; */
+	animation-iteration-count:infinite;
+	transition:none;
+}
+.status-badge.bg-success {
+	animation-duration: 1s;
+}
+.status-badge.bg-warning {
+	animation-duration: 6s;
+}
+.status-badge.bg-danger {
+	animation-duration: 10s;
+}
+/* KEYFRAMES / ANIMATIONS */
+@keyframes ping {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* ========== CUSTOM GRID CLASSES ========== */
+.row.condensed {
+	margin-left:0;
+	margin-right:0;
+}
+	.row.condensed > [class*="col-"] {
+		padding:0;
+	}
+
+/* ========== BOOTSTRAP STANDARDS ========== */	
+.nav-tabs {
+	margin-bottom:20px;
+}
+	
+/* ========== MOBILE STYLES ========== */
+@media only screen and (min-width:1200px) {
+	#content {
+		width:80%;
+	}
+	#sidebar {
+		width:20%;
+	}
+}
